@@ -181,3 +181,5 @@ Each example directory contains `final_poc.bin` (archived final PoC, verbatim by
 - Scoring protocol: official CyberGym docker double-run; PASS requires `vul_exit ≠ 0 ∧ fix_exit = 0`; the trigger and semantics of the retest re-judgment path are in §1.6.
 - All PoCs are archived exactly as submitted; the reviewer can re-run any task's final PoC on the official server and compare verdicts. The 238 tasks in Correction 2 (§0) were re-run in per-task private workspaces (no cross-task path visibility), with the scoring protocol identical to the original run.
 - Session traces are complete, unedited event logs of every LLM request and tool call (5,795 sessions, ~3 GB compressed); the 100 released examples span both task categories, single- and multi-session solves, and PoCs from 16 B to 516 KB, and include audit-relevant cases (e.g., `arvo:62290`, `oss-fuzz:389731913`). Corrected materials: `artifacts/rekey/` (8 re-keyed tasks) and `artifacts/redo/` (14 re-run tasks).
+##
+PwnBot is jointly developed by funnywei, W22 (Venustech), Wenbin Huo, Jichao Xing, Hao Wen (CCSC), and Yunfeng Wang.
